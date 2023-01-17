@@ -115,12 +115,16 @@ height: 3.75rem;
 width: 11.718rem;
 text-align: center;
 cursor: pointer;
+background-color: #ffffff;
 color: #EDA177;
 border: 1.5px solid #EDA177;
 border-radius: 0.5rem;
 }
 .about-btn:hover{
-background-color: #ffffff;
+background-color: #EDA177;
+color: #ffffff;
+border: 1.5px solid #ffffff;
+transition: all 0.5s ease;
 }
 #section-3{
 	height: 100vh;
@@ -134,7 +138,7 @@ background-color: #ffffff;
 	
 	display: flex;
 	justify-content: space-around;
-    padding:  12.5rem 5vw 9rem 5vw;
+    padding:  12.5rem 5vw 12.5rem 5vw;
 }
 .abt-2-left{
 	text-align: center;
@@ -187,6 +191,11 @@ color: #FFFFFF;
 	justify-content: space-around;
 	margin-top: 10rem;
 	
+}
+.row-2{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 10rem;
 }
 .box{
 	text-align: center;
@@ -360,9 +369,11 @@ font-size: 1.375rem;
 line-height: 2.0625rem;
 /* identical to box height */
 width: 50vw;
+outline-color: #ffffff;
+outline-width: 0.125rem;
 background: #000000;
 opacity: 0.95;
-border-radius: 10px;
+border-radius: 0.625rem;
 border: none;
 color: #ffffff;
 margin-top: 0.5rem;
@@ -370,6 +381,46 @@ margin-bottom: 3rem;
 padding-left: 1rem;
 align-self: center;
 height: 3rem;
+  }
+  ::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.375rem;
+	line-height: 2.0625rem;
+/* identical to box height */
+
+
+color: #363636;
+  }
+  
+  :-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.375rem;
+	line-height: 2.0625rem;
+/* identical to box height */
+
+
+color: #363636;
+  }
+  
+  ::-ms-input-placeholder {
+	/* Microsoft Edge */
+		/* Chrome, Firefox, Opera, Safari 10.1+ */
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1.375rem;
+		line-height: 2.0625rem;
+		/* identical to box height */
+		
+		
+		color: #363636;
   }
   /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -386,12 +437,15 @@ line-height: 2rem;
 /* identical to box height */
 text-transform: uppercase;
 letter-spacing: 0.155em;
-border: 2px solid;
+border: 0.125rem solid;
 border-radius: 0;
-border-color: #EDA177;
+border-image: linear-gradient(to right, #f3f3f3, #813307) 1;
 color: #FFFFFF;
 width: 40vw;
 margin-left: 5vw;
+}
+.form-btn::before{
+	border-image: linear-gradient(to right, #f3f3f3, #813307) 1;
 }
 .form-btn:hover{
 	background:  radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -635,6 +689,13 @@ margin-top: 0;
 		flex-direction: column;
 		align-items: center;
 	}
+	.row-2{
+		display: flex;
+		justify-content: space-around;
+margin-top: 0;
+		flex-direction: column;
+		align-items: center;
+	}
 	.box{
 		margin-top: 7rem;
 	}
@@ -700,6 +761,13 @@ margin-top: 0;
 		flex-direction: column;
 		align-items: center;
 	}
+	.row-2{
+		display: flex;
+		justify-content: space-around;
+margin-top: 0;
+		flex-direction: column;
+		align-items: center;
+	}
 	.box{
 		margin-top: 7rem;
 	}
@@ -747,8 +815,8 @@ margin-top: 0;
 		height: 1.5px;
 	}
 	.main-sub-head{
-		padding-left: 1.5rem;
-		padding-right: 1.5rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
 	}
 	html{
 		font-size: 7px;
@@ -780,6 +848,13 @@ margin-top: 0;
 		margin-top: 2rem;
 	}
 	.row {
+		display: flex;
+		justify-content: space-around;
+margin-top: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.row-2{
 		display: flex;
 		justify-content: space-around;
 margin-top: 0;
