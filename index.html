@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"   href="favicon.ico">
+    <link rel="stylesheet" href="CSS/styles5.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://kit.fontawesome.com/a66516daf4.js"
+    crossorigin="anonymous"></script>
+    <title>Campus Ambassador</title>
+</head>
+<body style="overflow-x: hidden;">
+     <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+
+
+
+    </script>
+
+      <nav style="opacity: 1;">
+        <a href="https://www.ecellnitb.com"><img class="logo" id="logo-1"
+                src="Images/logo.png"></a>
+        <ul class="nav nav-items"
+            style="text-transform: uppercase;">
+
+            <li class="nav-link"><a onclick="closeNav()"
+                    href="#large-header">home</a></li>
+            <li class="nav-link"><a onclick="closeNav()"
+                    href="#section-2">About Us</a></li>
+            <li class="nav-link"><a onclick="closeNav()"
+                    href="#section-6">FAQS</a></li>
+            <li class="nav-link"><a onclick="closeNav()"
+                    href="https://esummit.ecellnitb.com/">E-summit'23</a></li>
+            <li class="nav-link"><a onclick="closeNav()"
+                    href="#section-7">Contact Us</a></li>
+
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+<section id="large-header" class="large-header">
+    <div class="home">
+        <canvas id="demo-canvas"></canvas>
+        <p class="main-head main-title">Campus Ambassador <br> Internship Program </p>
+        <p class="main-sub-head">Contribute in organising Central India’s Largest Entrepreneurial Fest.</p>
+    </div>
+</section>
+<section id="section-2">
+    <div class="about">
+        <p class="about-head heading " >About <span style="color: #EDA177;"> E-Cell NIT Bhopal</span></p>
+        <p class="about-text">Entrepreneurship Cell NIT-Bhopal (MANIT) is a voluntary organization with the principal objective of promoting start-up culture and building an entrepreneurial environment.
+            E-Cell brings you a perfect opportunity to develop mastery in skills and turn your budding, blooming innovative ideas to reality. Events like StartUp Expo, E-Summit, Content Creation Conclave and many more with competitions challenging creativity, sessions from experts in respective fields have laid out the foundation for moulding the burgeoning entrepreneurial minds.
+            E-Cell NIT-B, well connected with alumni network and industrial experts, provides necessary resources and expert guidance to enthusiastic students.
+            </p>
+
+            <a href="#section-5"><button class="about-btn">Join Us</button></a>
+    </div>
+</section>
+<section id="section-3">
+    <div class="about-2">
+        <div class="abt-2-left">
+            <p class="about-2-head">WHAT IS</p>
+            <p class="about-2-sub-head">E-CELL MANIT <br> CA PROGRAM</p>
+        </div>
+        <div class="abt-2-right">
+            <p class="about-2-text">E-Cell MANIT Bhopal's Campus Ambassador Program is an initiative to amplify our connections with colleges across the nation and spread the spirit of entrepreneurship.
+                        <br><br><br>
+                This program is aimed at diversifying prospects for all enthusiasts and giving college students hands-on experience of the entrepreneurial community. It is a chance for them to become the face of their college and organise Central India's Entrepreneurial Megafest.
+                </p>
+        </div>
+    </div>
+</section>
+<section id="section-4">
+    <div class="oppertunities">
+        <p class="opper-head heading">What’s <span style="color: #EDA177;"> Inside for you?</span></p>
+        <div class="row">
+            <div class="box">
+                <img src="Images/certified 1.png" alt="">
+                <p class="box-head">Get Certified</p>
+                <p class="box-text">Certificate from E-Cell MANIT Bhopal</p>
+            </div>
+            <div class="box">
+                <img src="Images/organise 1.png" alt="">
+                <p class="box-head">Be an organiser</p>
+                <p class="box-text">Chance to organize Central India's Entrepreneurial Megafest</p>
+            </div>
+            <div class="box">
+                <img src="Images/ion_ticket-outline.png" alt="">
+                <p class="box-head">Free Passes</p>
+                <p class="box-text">Get Free passes for E-Summit 23</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box">
+                <img src="Images/spirit2 1.png" alt="">
+                <p class="box-head">Get Hired</p>
+                <p class="box-text">Internship Opportunity at growing Startups</p>
+            </div>
+            <div class="box">
+                <img src="Images/Prices 1 (1).png" alt="">
+                <p class="box-head">Win Prizes</p>
+                <p class="box-text">Exclusive prizes and goodies for top performers</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section id="section-5">
+    <div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+    <div class="registration-form" >
+    
+        <div class="form">
+            <p class="form-head ">Become our Campus Ambassador</p>
+            <div class="form-hr"></div>
+            <form  id="registrationform">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Second Name</label><br>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="number">Contact No. (Preferrably Whatsapp no.)</label><br>
+                <input type="number" id="number" name="number" required><br>
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email"  required><br>
+                <label for="college">Name of your College</label><br>
+                <input type="text" id="college" name="college" required><br>
+                <label for="year">Year of Graduation from the college</label><br>
+                <input type="number" id="year" name="year" required><br>
+                <input type="submit" value="submit" class="form-btn">
+
+            </form>
+        </div>
+    </div>
+</section>
+<section id="section-6">
+    <p class="heading faq-head" style="color: #FFFFFF;;">FAQS</p>
+    <div class="faq">
+       
+        <p class="quest">How to become a Campus Ambassador at E-Cell NIT Bhopal?</p>
+        <p class="ans">Students interested in joining our Campus Ambassador program need to register on the official website of E-Cell’s Campus Ambassador program.</p>
+        <p class="quest">How to become a Campus Ambassador at E-Cell NIT Bhopal?</p>
+        <p class="ans">Students interested in joining our Campus Ambassador program need to register on the official website of E-Cell’s Campus Ambassador program.</p>
+        <p class="quest">How to become a Campus Ambassador at E-Cell NIT Bhopal?</p>
+        <p class="ans">Students interested in joining our Campus Ambassador program need to register on the official website of E-Cell’s Campus Ambassador program.</p>
+    </div>
+</section>
+<section id="section-7">
+    <hr class="footer-hr">
+    <p class="foot-head">Contact Us</p>
+    <div class="footer">
+        <div class="foot-left">
+            <div class="foot-no">
+                <p>Sarthak Agar</p>
+                <p><a href="tel: +91 97528 24611">+91 97528 24611</a> </p>
+            </div>
+            <div class="foot-no">                           
+                <p>Aaditya vijayvargiya</p>
+                <p><a href="tel:+91 93402 86321">+91 93402 86321</a></p>
+            </div>
+            <div class="foot-no">
+                <p>Gopal Vashisth</p>
+                <p><a href="tel:+91 97175 94994"> +91 97175 94994</a></p>
+            </div>
+        </div>
+        <div class="foot-right">
+            <p class="adress-content"> <i class="fa-solid fa-location-dot"></i>Maulana Azad National Institute of Technology,
+                Bhopal India - 462003</p>
+
+
+
+
+            <p class="footer-mail"><a href="mailto:alum@ecellnitb.com"><i class="fa-solid fa-envelope"></i>
+                support@ecellnitb.com</a></p>
+        </div>
+    </div>
+    <div class="social">
+        <div class="icon">
+            <div class="icon1"><a href="https://www.instagram.com/ecell_nitb/"><i
+                        class="fa-brands fa-instagram"></i></a></div>
+            <div class="icon1"><a href="https://www.youtube.com/@EntrepreneurshipCellNITBhopal"><i
+                        class="fa-brands fa-youtube"></i></a></div>
+            <div class="icon1"><a href="https://www.linkedin.com/company/ecell-manit"> <i
+                        class="fa-brands fa-linkedin"></i></a></div>
+            <div class="icon1"><a href="https://www.facebook.com/ecellnitbhopal/"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p> Copyright © 2023 • E-Cell MANIT Bhopal</p>
+        </div>
+    </div>
+</section>
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script src="JS/app4.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
