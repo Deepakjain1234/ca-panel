@@ -42,7 +42,8 @@ nav {
   align-items: right;
   height: 132px;
   font-family: 'Poppins', sans-serif;
-  background-color: transparent;
+  background-color: #00000080;
+  opacity: 0.5;
   width: 100vw;
 }
 
@@ -91,7 +92,7 @@ li a :hover{
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: 5px;
 }
 
@@ -111,7 +112,8 @@ li a :hover{
   nav {
     overflow-x: hidden;
     backdrop-filter: unset !important;
-    background-color: transparent;
+    background-color: #00000080;
+    
     height: 72px;
   }
 
